@@ -20,7 +20,7 @@ describe('testing', () => {
     //cy.get('div[class="mb-16 w-full bg-white p-8 dark:bg-stone-200 md:rounded-b-lg"]').contains('BIENVENIDOS')
     //cy.compareSnapshot('/');
     cy.log(my_name);
-    console.log(my_name);
+    //console.log(my_name);
     console.log(`my full name is ${my_name}`);
   })
 
