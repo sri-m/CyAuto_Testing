@@ -1,0 +1,21 @@
+{
+  "name": "cytest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@percy/cli": "^1.28.2",
+    "@percy/cypress": "^3.1.2",
+    "cypress": "^13.7.1",
+    "cypress-image-diff-js": "^2.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-visual-regression": "^5.0.0"
+  }
+}
