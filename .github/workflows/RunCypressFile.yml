@@ -13,6 +13,6 @@ jobs:
         with:
           #working-directory: cypress/e2e/
           #project: cypress/e2e/
-          spec: cypress/e2e/iframeHandle.cy.js
+          spec: ./cypress/e2e/iframeHandle.cy.js
           browser: chrome
           headed: false
