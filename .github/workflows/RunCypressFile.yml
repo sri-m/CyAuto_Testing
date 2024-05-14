@@ -14,4 +14,4 @@ jobs:
           #project: ./e2e/1-getting-started/
           spec: cypress/e2e/1-getting-started/iframeHandle.cy.js
           browser: chrome
-          headed: true
+          headed: false
