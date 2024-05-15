@@ -11,7 +11,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
+          record: true
+        env:
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #project: ./  #only project root folder
           #spec: cypress/e2e/1-getting-started/iframeHandle.cy.js   #specific file
           #spec: cypress/**/**/*.cy.js   #all files from e2e/1-getting-started folder
