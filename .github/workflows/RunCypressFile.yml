@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          project: cypress/**/**
+          project: cypress/e2e/1-getting-started
           #spec: cypress/e2e/1-getting-started/iframeHandle.cy.js   #specific file
           #spec: cypress/**/**/*.cy.js   #all files from e2e/1-getting-started folder
           browser: chrome
