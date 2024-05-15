@@ -12,9 +12,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           record: true
+          parallel: true
         env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # pass GitHub token to allow accurately detecting a build vs a re-run build
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           #project: ./  #only project root folder
           #spec: cypress/e2e/1-getting-started/iframeHandle.cy.js   #specific file
           #spec: cypress/**/**/*.cy.js   #all files from e2e/1-getting-started folder
